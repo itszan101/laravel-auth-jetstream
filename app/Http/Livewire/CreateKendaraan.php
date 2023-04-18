@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\kendaraan;
 use Livewire\Component;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -68,6 +69,26 @@ class CreateKendaraan extends Component
 
         $this->button = create_button($this->action, "User");
     }
+    
+    // public function store()
+    // {
+    //     $this->validate([
+    //         'nik' => 'required|digits:16|numeric',
+    //         'nama_pemilik' => 'required|string|max:225',
+    //         'email' => 'required|string|email|unique:kendaraans,email',
+    //         'nama_kendaraan' => 'required|string|max:225',
+    //         'nomor_kendaraan' => 'required|string|max:20|unique:kendaraans,nomor_kendaraan',
+    //         'nomor_rangka' => 'required|numeric',
+    //         'nomor_mesin' => 'required|numeric',
+    //         'kapasitas_mesin' => 'required|string',
+    //         'poto_kendaraan' => 'required|string'
+    //     ]);
+
+    //     $post = kendaraan::create([
+    //         'title' => $this->title,
+    //         'content' => $this->content
+    //     ]);
+    // }
 
     public function render()
     {

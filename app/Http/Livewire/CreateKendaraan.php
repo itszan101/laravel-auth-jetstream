@@ -6,6 +6,7 @@ use App\Models\kendaraan;
 use Livewire\Component;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Auth;
 
 class CreateKendaraan extends Component
 {
